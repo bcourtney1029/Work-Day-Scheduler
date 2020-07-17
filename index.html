@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4" style="text-align: center;">Work Day Scheduler</h1>
+          <p class="lead" style="text-align: center;">Use this application to help you organize your work day!</p>
+          <br>
+          <p class="lead" style="text-align: center;">The background's are color coordinated! Red= Past hours, grey= This hour, green= Future hours!</p>
+          <p class="date" style="text-align: center;">Today's date</p>
+
+        </div>
+    </div>
+    <br>
+    
+
+    <div class="container">
+
+        <div class="div">
+            <button class="btn btn-outline-primary" type="button" id="clear">Clear</button>
+        </div> 
+
+        <div class="row" id="row9">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                9AM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="9">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input9" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot9" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn9">Save</button>
+                    </div>
+                    
+                  </div>
+            </div>
+            
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row10">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                10AM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="10">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input10" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot10" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn10">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row11">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                11AM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="11">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input11" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot11" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn11">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row12">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                12PM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input12" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot12" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn12">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row13">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                1PM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="1">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input1" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot1" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn1">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row14">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                2PM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="2">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input2" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot2" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn2">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row15">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                3PM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="3">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input3" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot3" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn3">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row16">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                4PM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="4">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input4" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot4" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn4">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+
+        <div class="row" id="row17">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                5PM
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="5">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input5" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <p id="slot5" style="display:inline-flexbox"></p>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="btn5">Save</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var todaysDate = moment().format("MMM Do YYYY");
+        $(".date").text(todaysDate);
+        var currentTime = moment().format("HH:mm");
+        var currentTimeArr = parseInt(currentTime);
+        var nine = localStorage.getItem("9AMitem");
+        var ten = localStorage.getItem("19AMitem");
+        var eleven = localStorage.getItem("11AMitem");
+        var twelve = localStorage.getItem("12PMitem");
+        var one = localStorage.getItem("1PMitem");
+        var two = localStorage.getItem("2PMitem");
+        var three = localStorage.getItem("3PMitem");
+        var four = localStorage.getItem("4PMitem");
+        var five = localStorage.getItem("5PMitem");
+
+        
+        
+        if (nine != null) {
+            $("#slot9").text(nine);
+        } 
+        if (ten != null) {
+            $("#slot10").text(ten);
+        } 
+        if (eleven != null) {
+            $("#slot11").text(eleven);
+        } 
+        if (twelve != null) {
+            $("#slot12").text(twelve);
+        } 
+        if (one != null) {
+            $("#slot1").text(one);
+        } 
+        if (two != null) {
+            $("#slot2").text(two);
+        } 
+        if (three != null) {
+            $("#slot3").text(three);
+        } 
+        if (four != null) {
+            $("#slot4").text(four);
+        } 
+        if (five != null) {
+            $("#slot5").text(five);
+        } 
+        
+
+        if (currentTimeArr >= 18) {
+            $(".row").css("background-color", "red");
+        } 
+        else if (currentTimeArr == 17) {
+            $(".row").css("background-color", "red");
+            $("#row17").css("background-color", "grey");
+        }
+        else if (currentTimeArr == 16) {
+            $(".row").css("background-color", "red");
+            $("#row17").css("background-color", "lightgreen");
+            $("#row16").css("background-color", "grey");
+        }
+        else if (currentTimeArr == 15) {
+            $(".row").css("background-color", "red");
+            $("#row15").css("background-color", "grey");
+            $("#row17").css("background-color", "lightgreen");
+            $("#row16").css("background-color", "lightgreen");
+        }
+        else if (currentTimeArr == 14) {
+            $(".row").css("background-color", "red");
+            $("#row14").css("background-color", "grey");
+            $("#row15").css("background-color", "lightgreen");
+            $("#row16").css("background-color", "lightgreen");
+            $("#row17").css("background-color", "lightgreen");
+        }
+        else if (currentTimeArr == 13) {
+            $(".row").css("background-color", "red");
+            $("#row13").css("background-color", "grey");
+            $("#row14").css("background-color", "lightgreen");
+            $("#row15").css("background-color", "lightgreen");
+            $("#row16").css("background-color", "lightgreen");
+            $("#row17").css("background-color", "lightgreen");
+        }
+        else if (currentTimeArr == 12) {
+            $(".row").css("background-color", "red");
+            $("#row12").css("background-color", "grey");
+            $("#row13").css("background-color", "lightgreen");
+            $("#row14").css("background-color", "lightgreen");
+            $("#row15").css("background-color", "lightgreen");
+            $("#row16").css("background-color", "lightgreen");
+            $("#row17").css("background-color", "lightgreen");
+        }
+        else if (currentTimeArr == 11) {
+            $(".row").css("background-color", "red");
+            $("#row11").css("background-color", "grey");
+            $("#row12").css("background-color", "lightgreen");
+            $("#row13").css("background-color", "lightgreen");
+            $("#row14").css("background-color", "lightgreen");
+            $("#row15").css("background-color", "lightgreen");
+            $("#row16").css("background-color", "lightgreen");
+            $("#row17").css("background-color", "lightgreen");
+        }
+        else if (currentTimeArr == 10) {
+            $(".row").css("background-color", "red");
+            $("#row10").css("background-color", "grey");
+            $("#row11").css("background-color", "lightgreen");
+            $("#row12").css("background-color", "lightgreen");
+            $("#row13").css("background-color", "lightgreen");
+            $("#row14").css("background-color", "lightgreen");
+            $("#row15").css("background-color", "lightgreen");
+            $("#row16").css("background-color", "lightgreen");
+            $("#row17").css("background-color", "lightgreen");
+        }
+        else if (currentTimeArr == 9) {
+            $("#row9").css("background-color", "grey");
+        }
+
+
+        $("#btn9").on("click", function() {
+            var item9 = $("#input9").val();
+            localStorage.setItem("9AMitem", item9);         
+        })
+        $("#btn10").on("click", function() {
+            var item10 = $("#input10").val();
+            localStorage.setItem("10AMitem", item10);         
+        })
+        $("#btn11").on("click", function() {
+            var item11 = $("#input11").val();
+            localStorage.setItem("11AMitem", item11);         
+        })
+        $("#btn12").on("click", function() {
+            var item12 = $("#input12").val();
+            localStorage.setItem("12PMitem", item12);         
+        })
+        $("#btn1").on("click", function() {
+            var item1 = $("#input1").val();
+            localStorage.setItem("1PMitem", item1);         
+        })
+        $("#btn2").on("click", function() {
+            var item2 = $("#input2").val();
+            localStorage.setItem("2PMitem", item2);         
+        })
+        $("#btn3").on("click", function() {
+            var item3 = $("#input3").val();
+            localStorage.setItem("3PMitem", item3);         
+        })
+        $("#btn4").on("click", function() {
+            var item4 = $("#input4").val();
+            localStorage.setItem("4PMitem", item4);         
+        })
+        $("#btn5").on("click", function() {
+            var item5 = $("#input5").val();
+            localStorage.setItem("5PMitem", item5);         
+        })
+        $("#clear").on("click", function() {
+            localStorage.clear();
+        })
+
+        })
+
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="moment.js"></script>
+    
+
+</body>
+</html>

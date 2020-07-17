@@ -1,1 +1,1 @@
-
+For this project, I have created a daily scheduling application. The user is able to see what day it is, and to look at a live-updating daily calendar. The calendar will save user input for future reference and will notify the user of which time slots are in the past, the present, or the future.
